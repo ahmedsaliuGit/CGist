@@ -4,7 +4,7 @@ import Layout from "../../components/Layout";
 import styles from "../../styles/PostById.module.css";
 
 export default function Post({ post }) {
-  const posterName = post.postedBy ? post.postedBy.name : " Unknown";
+  //   const posterName = post.postedBy ? post.postedBy.name : " Unknown";
   const DefaultPhoto = "/images/home-banner.jpg";
 
   return (
@@ -26,9 +26,9 @@ export default function Post({ post }) {
         <h3>{post.title}</h3>
         <p>{post.body}</p>
         <div className={styles.postByIdPostedBy}>
-          <small className="text-muted">
+          {/* <small className="text-muted">
             Posted by {posterName} on {new Date(post.created).toDateString()}
-          </small>
+          </small> */}
           <span>Like Unlike</span>
         </div>
       </section>
