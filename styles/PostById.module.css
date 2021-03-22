@@ -1,0 +1,20 @@
+.sectionPostByIdMain {
+    width: 70%;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.sectionPostByIdMain  img {
+    height: 450px;
+    width: 100%;
+}
+
+.sectionPostByIdMain h3 {
+    margin-top: 30px;
+}
+
+.postByIdPostedBy {
+    display: flex;
+    justify-content: space-between;
+}

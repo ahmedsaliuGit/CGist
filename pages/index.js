@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import styles from "../styles/Home.module.css";
 
 import { Card, Button, ListGroup } from "react-bootstrap";
+import Link from "next/link";
 
 export default function Home({ posts }) {
   const DefaultPhoto = "/images/fruit.jpeg";
@@ -30,7 +31,11 @@ export default function Home({ posts }) {
                   <Card.Body>
                     <Card.Title>{post.title}</Card.Title>
                     <Card.Text>{post.body}</Card.Text>
-                    <Button variant="primary">Read more</Button>
+                    <Link href={`/posts/${post._id}`}>
+                      <a>
+                        <Button variant="primary">Read more</Button>
+                      </a>
+                    </Link>
                   </Card.Body>
                   <Card.Footer>
                     <small className="text-muted">
